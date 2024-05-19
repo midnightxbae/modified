@@ -1,0 +1,156 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background: #f3f3f4;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  background: #0091d5;
+  padding: 14px 20px;
+  margin: 0;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.content {
+  margin-top: 45px;
+  padding: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.grid-item {
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  padding: 18px 0px 2px 13px;
+  margin-bottom: 10px;
+}
+
+.section .icon {
+  width: 35px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.label {
+  font-size: 20px;
+  color: #63636a;
+}
+
+.value {
+  font-size: 28px; /* Adjusted font size */
+  color: #20283e;
+  text-align: center; /* Center-align the text */
+  margin-top: 10px; /* Add margin-top */
+}
+
+.value.primary {
+  font-size: 32px; /* Adjusted font size */
+  color: #484848;
+}
+
+.unit {
+  font-size: 16px; /* Adjusted font size */
+  color: #7e909a;
+  margin-left: 4px;
+}
+
+.sub-text {
+  font-size: 14px;
+  color: #63636a;
+}
+
+.battery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.battery {
+  width: 150px;
+  height: 60px;
+  border: 3px solid #6ab187;
+  display: inline-block;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.battery .charge {
+  height: 100%;
+  background: #6ab187;
+  border-radius: 3px;
+}
+
+.battery .terminal {
+  width: 8px;
+  height: 16px;
+  background: #6ab187;
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toolbar {
+  text-align: center;
+  margin-top: 30px;
+}
+
+button {
+  font-size: 20px;
+  background: #0091d5;
+  padding: 15px 30px;
+  margin: 0 10px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0077b6;
+}
+
+.toggle {
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  background: #999;
+  cursor: pointer;
+}
+
+.toggle .tab {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  transition: transform 0.3s ease;
+}
+
+.toggle.off .tab {
+  transform: translateX(30px);
+}
+
+.hidden {
+  display: none;
+}
